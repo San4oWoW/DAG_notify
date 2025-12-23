@@ -1,0 +1,37 @@
+# --- Python / venv ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.pdb
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Airflow ---
+airflow.cfg
+airflow.db
+webserver_config.py
+logs/
+plugins/__pycache__/
+*.pid
+
+# If you use local sqlite by default:
+*.db
