@@ -1,15 +1,14 @@
-import os
 import json
+import os
 import tempfile
-import requests
 from datetime import datetime
 
 import mlflow
+import requests
 from airflow import DAG
-from airflow.operators.python import PythonOperator, BranchPythonOperator
-from airflow.operators.empty import EmptyOperator
 from airflow.exceptions import AirflowException
-
+from airflow.operators.empty import EmptyOperator
+from airflow.operators.python import BranchPythonOperator, PythonOperator
 
 MODEL_VERSION = os.getenv("MODEL_VERSION", "v1.0.0")
 
